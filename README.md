@@ -6,6 +6,22 @@ This repository shows the minimum setup for Python, cURL, Node.js, Cursor, Herme
 
 > lizh.ai is an independent OpenAI-compatible API gateway. It is not the official Moonshot AI or Kimi API website.
 
+## GitBook Documentation
+
+This repository is ready to sync into GitBook. Use [`SUMMARY.md`](SUMMARY.md) as the table of contents.
+
+Recommended GitBook space title:
+
+```text
+Kimi K3 OpenAI-Compatible API Guide
+```
+
+Recommended description:
+
+```text
+Practical setup guides for testing Kimi K3 through https://lizh.ai/v1 with Python, Node.js, cURL, Cursor, Hermes, and OpenClaw.
+```
+
 ## Quick Start
 
 1. Create or sign in to your lizh.ai account.
