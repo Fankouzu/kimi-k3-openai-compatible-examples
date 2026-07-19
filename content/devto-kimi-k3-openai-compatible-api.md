@@ -202,6 +202,10 @@ I put the working cURL, Python, Node.js, Hermes, and OpenClaw examples in this G
 
 [https://github.com/Fankouzu/kimi-k3-openai-compatible-examples](https://github.com/Fankouzu/kimi-k3-openai-compatible-examples)
 
+You can also read the same examples as a public documentation site:
+
+[https://fankouzu.github.io/kimi-k3-openai-compatible-examples/](https://fankouzu.github.io/kimi-k3-openai-compatible-examples/)
+
 Related practical guides:
 
 - [How to get and use a Kimi K3 API key](https://shop.lizh.ai/blogs/kimi-k3-api/kimi-k3-api-key-complete-guide-ru)
