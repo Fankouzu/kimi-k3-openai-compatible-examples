@@ -111,6 +111,21 @@ Detailed pricing guide: [Kimi K3 API pricing](https://shop.lizh.ai/blogs/kimi-k3
 - [Kimi K3 with Python](https://shop.lizh.ai/blogs/kimi-k3-api/kimi-k3-python-complete-guide-fr)
 - [Kimi K3 with OpenClaw or Hermes](https://shop.lizh.ai/blogs/kimi-k3-api/kimi-k3-openclaw-hermes-complete-guide-vi)
 
+## Publish The Dev.to Draft
+
+Create a Dev.to API key, then publish the Markdown article as an unpublished draft:
+
+```bash
+export DEVTO_API_KEY="your_devto_api_key"
+python3 scripts/publish_devto.py content/devto-kimi-k3-openai-compatible-api.md
+```
+
+To publish publicly after review:
+
+```bash
+python3 scripts/publish_devto.py content/devto-kimi-k3-openai-compatible-api.md --publish
+```
+
 ## Official Reference
 
 For official Kimi model behavior and provider-specific features, read the Kimi documentation:
