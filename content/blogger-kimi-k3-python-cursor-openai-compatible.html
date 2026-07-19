@@ -1,0 +1,155 @@
+<h1>How to use Kimi K3 API with Python, Cursor, and OpenAI-compatible tools</h1>
+
+<p>Kimi K3 is useful to test when you want a model for coding, long-context reading, agent workflows, or document-heavy work. The easiest way to evaluate it is not to rebuild your whole stack. Start with an OpenAI-compatible endpoint, send one small request, then move the same configuration into Python, Cursor, Hermes, OpenClaw, or your own backend.</p>
+
+<p>This tutorial uses <a href="https://lizh.ai/">lizh.ai</a> as an independent OpenAI-compatible API gateway.</p>
+
+<blockquote>
+  <p>lizh.ai is not the official Moonshot AI or Kimi API website. It is an independent gateway for calling Kimi K3 and other models through a familiar API shape.</p>
+</blockquote>
+
+<h2>What values do you need?</h2>
+
+<p>For most OpenAI-compatible tools, the important values are:</p>
+
+<pre><code>Base URL: https://lizh.ai/v1
+Model ID: kimi-k3
+API Key: your lizh.ai API key</code></pre>
+
+<p>Create your API key at <a href="https://lizh.ai/keys">https://lizh.ai/keys</a>.</p>
+
+<p>Check current model availability and pricing at <a href="https://lizh.ai/pricing">https://lizh.ai/pricing</a>.</p>
+
+<h2>Step 1: Test Kimi K3 with cURL</h2>
+
+<p>Before debugging an SDK or an editor integration, send one small cURL request.</p>
+
+<pre><code>export LIZH_API_KEY="your_lizh_api_key"
+
+curl https://lizh.ai/v1/chat/completions \
+  -H "Authorization: Bearer ${LIZH_API_KEY}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "kimi-k3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a short test plan for evaluating a long-context coding model."
+      }
+    ],
+    "max_tokens": 500
+  }'</code></pre>
+
+<p>If this works, your API key, endpoint, and model name are basically correct.</p>
+
+<h2>Step 2: Use Kimi K3 from Python</h2>
+
+<p>Install the OpenAI Python SDK:</p>
+
+<pre><code>pip install openai</code></pre>
+
+<p>Then call the lizh.ai OpenAI-compatible endpoint:</p>
+
+<pre><code>import os
+from openai import OpenAI
+
+client = OpenAI(
+    api_key=os.environ["LIZH_API_KEY"],
+    base_url="https://lizh.ai/v1",
+)
+
+response = client.chat.completions.create(
+    model="kimi-k3",
+    messages=[
+        {
+            "role": "system",
+            "content": "You are a concise technical assistant.",
+        },
+        {
+            "role": "user",
+            "content": "Explain when Kimi K3 is useful for long-context coding tasks.",
+        },
+    ],
+    max_tokens=500,
+)
+
+print(response.choices[0].message.content)</code></pre>
+
+<p>For more code examples, see the public documentation mirror:</p>
+
+<p><a href="https://fankouzu.github.io/kimi-k3-openai-compatible-examples/">Kimi K3 OpenAI-compatible API Guide</a></p>
+
+<h2>Step 3: Configure Cursor</h2>
+
+<p>If your coding tool supports custom OpenAI-compatible providers, use these values:</p>
+
+<pre><code>Provider: OpenAI-compatible
+Base URL: https://lizh.ai/v1
+API Key: your lizh.ai API key
+Model: kimi-k3</code></pre>
+
+<p>Start with a small prompt, for example:</p>
+
+<pre><code>Read this file and explain the main logic in 5 bullets.</code></pre>
+
+<p>After the first request works, try a real workflow:</p>
+
+<ul>
+  <li>summarize a large source file,</li>
+  <li>generate tests for a function,</li>
+  <li>review an error log,</li>
+  <li>compare two implementations,</li>
+  <li>plan a safe refactor.</li>
+</ul>
+
+<h2>Step 4: Configure Hermes or OpenClaw</h2>
+
+<p>For agent tools that accept YAML-style provider configuration, the important values are usually:</p>
+
+<pre><code>base_url: https://lizh.ai/v1
+api_key: ${LIZH_API_KEY}
+model: kimi-k3</code></pre>
+
+<p>If the tool asks for a provider type, choose an OpenAI-compatible or custom OpenAI provider rather than an official OpenAI-only preset.</p>
+
+<h2>Cost checklist before long-context tests</h2>
+
+<p>Long-context coding and document workflows can send large prompts. Before a large test:</p>
+
+<ul>
+  <li>start with a short prompt,</li>
+  <li>set a small output limit,</li>
+  <li>check current pricing,</li>
+  <li>review logs after the first request,</li>
+  <li>compare input, output, and cache-hit tokens separately.</li>
+</ul>
+
+<p>The pricing page is here:</p>
+
+<p><a href="https://lizh.ai/pricing">https://lizh.ai/pricing</a></p>
+
+<h2>Common mistakes</h2>
+
+<ul>
+  <li>Using the wrong Base URL instead of <code>https://lizh.ai/v1</code>.</li>
+  <li>Typing <code>Kimi K3</code> as a display name instead of the model ID <code>kimi-k3</code>.</li>
+  <li>Testing a huge prompt before confirming a small request works.</li>
+  <li>Hard-coding an API key in source code.</li>
+  <li>Forgetting to check current model price before long-context tasks.</li>
+</ul>
+
+<h2>Useful links</h2>
+
+<ul>
+  <li><a href="https://lizh.ai/">lizh.ai</a></li>
+  <li><a href="https://lizh.ai/keys">Create lizh.ai API keys</a></li>
+  <li><a href="https://lizh.ai/pricing">Model pricing</a></li>
+  <li><a href="https://github.com/Fankouzu/kimi-k3-openai-compatible-examples">GitHub examples repository</a></li>
+  <li><a href="https://fankouzu.github.io/kimi-k3-openai-compatible-examples/">Public documentation mirror</a></li>
+  <li><a href="https://shop.lizh.ai/blogs/kimi-k3-api/kimi-k3-api-key-complete-guide-ru">How to get and use Kimi K3 API</a></li>
+  <li><a href="https://shop.lizh.ai/blogs/kimi-k3-api/kimi-k3-pricing-complete-guide-ru">Kimi K3 API pricing guide</a></li>
+</ul>
+
+<h2>Final thought</h2>
+
+<p>The best first test is small and reversible: create a key, send one request to <code>https://lizh.ai/v1</code>, use <code>kimi-k3</code> as the model ID, and then move the same configuration into your preferred tool.</p>
