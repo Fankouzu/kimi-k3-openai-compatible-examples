@@ -46,12 +46,12 @@ def parse_frontmatter(markdown: str) -> tuple[dict[str, Any], str]:
     return meta, body.lstrip()
 
 
-def normalize_tags(value: Any) -> list[str]:
+def normalize_tags(value: Any) -> str:
     if isinstance(value, list):
-        return [str(tag).strip() for tag in value if str(tag).strip()]
+        return ",".join(str(tag).strip() for tag in value if str(tag).strip())
     if isinstance(value, str):
-        return [tag.strip() for tag in value.split(",") if tag.strip()]
-    return []
+        return ",".join(tag.strip() for tag in value.split(",") if tag.strip())
+    return ""
 
 
 def build_payload(path: Path, publish: bool) -> dict[str, Any]:
