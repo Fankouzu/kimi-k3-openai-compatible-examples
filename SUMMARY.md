@@ -10,3 +10,4 @@
 * [OpenClaw](docs/openclaw.md)
 * [Pricing and Cost Checks](docs/pricing-cost-checks.md)
 * [Troubleshooting](docs/troubleshooting.md)
+* [Resources](docs/resources.md)
