@@ -104,14 +104,15 @@ Detailed pricing guide: [Kimi K3 API pricing](https://shop.lizh.ai/blogs/kimi-k3
 
 ## Useful Guides
 
-- [Publishable Dev.to draft: Kimi K3 OpenAI-compatible API](content/devto-kimi-k3-openai-compatible-api.md)
+- [Dev.to article: Kimi K3 OpenAI-compatible API](https://dev.to/_47686745be4094e3787a/how-to-use-kimi-k3-with-an-openai-compatible-api-endpoint-196l)
+- [Local article source](content/devto-kimi-k3-openai-compatible-api.md)
 - [How to get and use Kimi K3 API](https://shop.lizh.ai/blogs/kimi-k3-api/kimi-k3-api-key-complete-guide-ru)
 - [Kimi K3 pricing guide](https://shop.lizh.ai/blogs/kimi-k3-api/kimi-k3-pricing-complete-guide-ru)
 - [Kimi K3 with Cursor](https://shop.lizh.ai/blogs/kimi-k3-api/kimi-k3-cursor-complete-guide-ja)
 - [Kimi K3 with Python](https://shop.lizh.ai/blogs/kimi-k3-api/kimi-k3-python-complete-guide-fr)
 - [Kimi K3 with OpenClaw or Hermes](https://shop.lizh.ai/blogs/kimi-k3-api/kimi-k3-openclaw-hermes-complete-guide-vi)
 
-## Publish The Dev.to Draft
+## Publish The Dev.to Article
 
 Create a Dev.to API key, then publish the Markdown article as an unpublished draft:
 
