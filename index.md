@@ -1,4 +1,7 @@
-# Kimi K3 OpenAI-Compatible API Guide
+---
+layout: home
+title: Kimi K3 OpenAI-Compatible API Guide
+---
 
 Use Kimi K3 through an OpenAI-compatible API endpoint with `https://lizh.ai/v1`.
 
@@ -21,9 +24,12 @@ Check current model availability and pricing at [https://lizh.ai/pricing](https:
 - [Quickstart](docs/quickstart.md): send the first request.
 - [Python](docs/python.md): use the OpenAI Python SDK.
 - [Node.js](docs/nodejs.md): use the OpenAI Node.js SDK.
+- [cURL](docs/curl.md): verify the endpoint before SDK debugging.
 - [Cursor](docs/cursor.md): configure an OpenAI-compatible model provider.
 - [Hermes](docs/hermes.md) and [OpenClaw](docs/openclaw.md): configure AI coding tools.
-- [GitHub Pages mirror](https://fankouzu.github.io/kimi-k3-openai-compatible-examples/): browse this guide as a public website.
+- [Pricing and Cost Checks](docs/pricing-cost-checks.md): test without wasting tokens.
+- [Troubleshooting](docs/troubleshooting.md): fix common setup failures.
+- [Resources](docs/resources.md): related articles and references.
 
 ## Official Reference
 

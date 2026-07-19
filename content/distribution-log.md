@@ -9,6 +9,7 @@ The goal is not to create thin backlinks. Each destination should contain a usef
 | Date | Platform | URL | Status | Notes |
 | --- | --- | --- | --- | --- |
 | 2026-07-19 | GitHub | https://github.com/Fankouzu/kimi-k3-openai-compatible-examples | Live | Code examples for cURL, Python, Node.js, Hermes, and OpenClaw. |
+| 2026-07-19 | GitHub Pages | https://fankouzu.github.io/kimi-k3-openai-compatible-examples/ | Pending | Public documentation mirror generated from the same Markdown source. |
 | 2026-07-19 | Dev.to | https://dev.to/_47686745be4094e3787a/how-to-use-kimi-k3-with-an-openai-compatible-api-endpoint-196l | Live | Developer tutorial with links to lizh.ai, keys, pricing, GitHub, and shop.lizh.ai guides. |
 
 ## Next Candidates

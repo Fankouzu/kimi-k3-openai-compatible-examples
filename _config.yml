@@ -1,0 +1,12 @@
+title: Kimi K3 OpenAI-Compatible API Guide
+description: Practical setup guides for testing Kimi K3 through https://lizh.ai/v1 with Python, Node.js, cURL, Cursor, Hermes, and OpenClaw.
+theme: minima
+plugins:
+  - jekyll-seo-tag
+show_excerpts: false
+header_pages:
+  - docs/quickstart.md
+  - docs/python.md
+  - docs/nodejs.md
+  - docs/cursor.md
+  - docs/resources.md
