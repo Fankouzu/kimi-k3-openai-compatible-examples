@@ -1,0 +1,9 @@
+provider: openai-compatible
+base_url: https://lizh.ai/v1
+api_key: ${LIZH_API_KEY}
+model: kimi-k3
+
+notes:
+  - Create the API key at https://lizh.ai/keys.
+  - Check current model pricing at https://lizh.ai/pricing.
+  - Keep the API key in an environment variable, not in the config file.

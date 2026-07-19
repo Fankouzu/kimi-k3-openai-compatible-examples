@@ -1,0 +1,9 @@
+llm:
+  provider: openai-compatible
+  base_url: https://lizh.ai/v1
+  api_key: ${LIZH_API_KEY}
+  model: kimi-k3
+
+testing:
+  first_prompt: "Summarize this task and list the next three actions."
+  max_tokens: 500
