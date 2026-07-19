@@ -10,6 +10,8 @@ Use these links for deeper setup examples and related references.
 
 [How to use Kimi K3 with an OpenAI-compatible API endpoint](https://dev.to/_47686745be4094e3787a/how-to-use-kimi-k3-with-an-openai-compatible-api-endpoint-196l)
 
+[How to use Kimi K3 API with Python, Cursor, and OpenAI-compatible tools](https://lizh-ai-api.blogspot.com/2026/07/how-to-use-kimi-k3-api-with-python.html)
+
 ## lizh.ai
 
 - [lizh.ai](https://lizh.ai/)
