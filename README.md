@@ -104,6 +104,7 @@ Detailed pricing guide: [Kimi K3 API pricing](https://shop.lizh.ai/blogs/kimi-k3
 
 ## Useful Guides
 
+- [Publishable Dev.to draft: Kimi K3 OpenAI-compatible API](content/devto-kimi-k3-openai-compatible-api.md)
 - [How to get and use Kimi K3 API](https://shop.lizh.ai/blogs/kimi-k3-api/kimi-k3-api-key-complete-guide-ru)
 - [Kimi K3 pricing guide](https://shop.lizh.ai/blogs/kimi-k3-api/kimi-k3-pricing-complete-guide-ru)
 - [Kimi K3 with Cursor](https://shop.lizh.ai/blogs/kimi-k3-api/kimi-k3-cursor-complete-guide-ja)
